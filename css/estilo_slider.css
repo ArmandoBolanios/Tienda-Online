@@ -1,0 +1,163 @@
+p {
+	font-size: 1.2em;
+	font-weight: 400;
+	color: #e3e3e3;
+	margin-bottom: 15px
+}
+
+.carousel-indicators {
+	left: auto;
+	width: auto;
+	padding-left: 0;
+	margin-left: 0;
+}
+.banner {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	position: relative;
+	color: #fff;
+}
+.banner-image {
+	vertical-align: middle;
+	min-height: 100%;
+	width: 100%;
+}
+.banner:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.55);
+	content: "";
+}
+.banner-caption {
+	position: absolute;
+	top: 40%;
+	width: 100%;
+	z-index: 2;
+}
+.banner-caption h1,
+.banner-caption h2,
+.banner-caption h3,
+.banner-caption h4,
+.banner-caption h5,
+.banner-caption h6 {
+	color: #ffffff;
+}
+.carousel-centered {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate3d(0, -50%, 0);
+	-moz-transform: translate3d(0, -50%, 0);
+	transform: translate3d(0, -50%, 0)
+}
+
+.margin-b-40 {
+	margin-bottom: 40px!important
+}
+
+.carousel-title{
+	text-transform: uppercase
+}
+.carousel-title {
+	font-size: 80px;
+	font-weight: 700;
+	color: #fff;
+	line-height: 1.1
+}
+@media (max-width:768px) {
+	.carousel-title {
+		font-size: 60px
+	}
+}
+/*------------------------------------------------*/
+.btn-theme{
+	line-height: 1.4
+}
+.btn-theme:hover{
+	transition-duration: .3s;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(.7, 1, .7, 1)
+}
+.btn-theme.focus,
+.btn-theme:focus,
+.btn-theme:hover {
+	text-decoration: none
+}
+.btn-theme {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	background-image: none;
+	border-style: solid;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+
+.btn-theme.active,
+.btn-theme:active {
+	background-image: none;
+	outline: 0
+}
+
+.btn-theme.disabled,
+.btn-theme[disabled],
+fieldset[disabled] .btn-theme {
+	cursor: not-allowed;
+	box-shadow: none;
+	opacity: .65;
+	pointer-events: none
+}
+.btn-theme-sm {
+	font-size: 13px;
+	font-weight: 600;
+	padding: 15px 30px
+}
+.btn-white-brd {
+	color: #fff;
+	background: 0 0;
+	border-color: rgba(255, 255, 255, .3);
+	border-width: 1px
+}
+.btn-white-brd.focus,
+.btn-white-brd:focus,
+.btn-white-brd:hover {
+	color: #515769;
+	background: #fff;
+	border-color: transparent
+}
+
+
+.full-screen {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat
+}
+
+/*color al seleccionar texto*/
+::selection {
+	color: #fff;
+	background: #17bed2;
+	text-shadow: none
+}
+
+::-webkit-selection {
+	color: #fff;
+	background: #17bed2;
+	text-shadow: none
+}
+
+::-moz-selection {
+	color: #fff;
+	background: #17bed2;
+	text-shadow: none
+}

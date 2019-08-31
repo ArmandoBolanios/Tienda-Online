@@ -1,0 +1,209 @@
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.title {
+    margin-top: 0;
+}
+
+/* Columnas para propagandas y anuncios
+------------------------------------------------------------------------------------------------------------------- */
+/*estilos de E-Shopper columna 1*/
+.left-sidebar h2, .brands_products h2 {
+    color: #FE980F;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 auto 30px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    z-index:3;
+}
+.left-sidebar h2:after, h2.title:after{
+    content: " ";
+    position: absolute;
+    border: 1px solid #e6e6e6;
+    bottom:8px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    z-index: -2;
+}
+.left-sidebar h2:before{
+    content: " ";
+    position: absolute;
+    background: #fff;
+    bottom: -6px;
+    width: 130px;
+    height: 30px;
+    z-index: -1;
+    left: 50%;
+    margin-left: -65px;
+}
+.shipping {
+    background-color: #F2F2F2;
+    margin-top: 40px;
+    overflow: hidden;
+    padding-top: 20px;
+    position: relative;
+}
+/*estilos de E-Shopper columna 2*/
+h2.title:before{
+    content: " ";
+    position: absolute;
+    background: #fff;
+    bottom: -6px;
+    width: 220px;
+    height: 30px;
+    z-index: -1;
+    left: 50%;
+    margin-left: -110px;
+}
+h2.title {
+    color: #FE980F;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 15px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+}
+.bg h2.title {
+    margin-right:0;
+    margin-left:0;
+    margin-top: 0;
+}
+
+/*estilos de SurfHouse-Web columna 2*/
+.col_1_of_3 {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%; /*espacio entre los bordes*/
+}
+.col_1_of_3:first-child {
+    margin-left: 0;
+}
+.span_1_of_3:hover .sale-box1 span.on_sale1{
+    background:#e24602;
+    color:#fff;
+}
+.span_1_of_3:hover .sale-box span.on_sale{
+    background:#faef03;
+    color:#000;
+}
+
+.span_1_of_3 {
+    width: 31.6%;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+.imgNormal img {
+	width: auto;
+}
+
+/*-- -------------------------------------- responsive ---------------------------------------------------------- */
+@media (max-width:767px) {
+    .content-wrapper,
+    .main-footer {
+        margin-left: 0
+    }
+}
+@media (min-width:768px) {
+    .sidebar-collapse .content-wrapper,
+    .sidebar-collapse .main-footer {
+        margin-left: 0
+    }
+}
+@media (max-width:767px) {
+    .sidebar-open .content-wrapper,
+    .sidebar-open .main-footer {
+        -webkit-transform: translate(230px, 0);
+        -ms-transform: translate(230px, 0);
+        -o-transform: translate(230px, 0);
+        transform: translate(230px, 0)
+    }
+}
+
+@media screen and (max-width:480px) {
+    /*.product-image-wrapper {
+    font-size: 14px;
+}*/
+    .product-image-wrapper {
+        font-variant-position: 14px;
+    }
+    
+}
+@media screen and (max-width:414px) {
+    /*.product-image-wrapper {
+    font-size: 12px;
+}
+    .product-image-wrapper h2 {
+    font-size: 25px;
+}*/
+    .product-image-wrapper {
+        font-variant-position: 12px;
+    }
+}
+@media screen and (max-width:375px) {
+    
+}
+@media screen and (max-width:320px) {
+    /*.product-image-wrapper  {
+    font-size: 9px;
+}
+    .product-image-wrapper h2 {
+    font-size: 18px;
+}*/
+    .product-image-wrapper {
+        font-size: 9px;
+    }
+    
+}
+@media(max-width:991px){
+    .about-right {
+        padding-right: 1em;
+        float: none;
+        margin-bottom: 1em;
+    }
+    .about-left {
+        padding-right: 1em;
+        float: none;
+        margin-bottom: 1em;
+    }
+}
+@media(max-width:320px){
+    .about-left h4 {
+        font-size: 1em;
+    }
+}
+
+@media(max-width:320px){   
+    .footer-logo h3 {
+        font-size: 2em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

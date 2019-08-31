@@ -1,0 +1,337 @@
+/* estilos  */
+@font-face{
+    font-family: Sans;
+    src: url(OpenSans-Semibold.ttf);
+}
+ 
+
+/* -- header */
+
+.nav li a:hover {
+    background-color:#DC182B; /*#DF0101 color cuando señala un elemento ul>li*/
+    color: white; /* la letra se tona en blanco para no perder color */
+}
+
+.nav > li {
+    float: left;
+}
+/*colocar los enlaces de rojo */
+.lin{
+    color: red;
+}
+
+/*cabecera del la modal*/
+.modl{
+    background: #2a382b;
+    color: #d8e2de;
+}
+/*==================================================================================================*/
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.nav li:hover > ul {
+    display: block;
+}
+.nav li ul li {
+    position: relative;
+}
+.nav li ul li ul {
+    right: -140px;
+    top: 0px;
+}
+
+/*===========================================================================================================*/
+/*colores del menu bootstrap */
+.navbar-inverse { 
+    background-color: #1a2732;/*es el fondo azul fuerte */
+    border-color:#1a2732;/*es el borde azul del fondo*/
+
+}
+.navbar-inverseS { 
+    background-color: #FFD21C;/*es el fondo amarillo fuerte */
+    border-color:#FFD21C;/*es el borde amarillo del fondo*/
+
+}
+
+.navbar-inverseS .navbar-inverse .navbar-nav>li>a {
+    color:#080808;/*letras del menu en color negro */
+    font-size: 14px; /* tamaño de las letras del menu principal*/
+    /*text-transform: uppercase; /*esto hace todo en MAYÚSCULAS */
+    background: transparent;
+    -webkit-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out;
+    font-family: Sans; /*tipo de fuente para letras del menu*/
+    padding-right: 0px 15px 0px;	
+}
+
+/* color rojo cuando está en ACTIVE */
+.navbar-inverseS .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+    color: red;  /*color de las letras cuando esta en active */
+    background-color: transparent;
+}
+
+.navbar-inverseS .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+    color: red; /*color rojo al señalar el menu principal */
+    background-color: transparent;
+}
+
+.navbar-inverseS .navbar-inverse .navbar-toggle{
+    border-color: #FFFFFF;/*borde blanco del icono responsivo */
+}
+
+/* centra el menu */
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+    text-align: center; /*centra el menu */
+}
+
+.navbar-fixed-top {
+    border-radius: 8px; /*pone borde del menu principal*/
+
+}
+
+/*===========================================================================================================*/
+
+/* LOGO */
+.navbar-brand{
+    padding: 0px;
+}
+
+.navbar-brand>img{
+    height: 50px; /* 100 */
+    width: 50px; 
+}
+
+/*=============================================================================================================*/
+
+.tiraPrincipal{
+    /*background: #DCDCDC; /*color de relleno gris */
+    /*border: 1px solid #999999;/*es el bordegris */
+    border-radius: 8px;
+    width: 90%;
+}
+
+.tiraSlider{
+    /*border: 1px solid #999999;/*es el bordegris */
+    width: 90%;
+    height: 350px;
+}
+
+.tiraCentral {
+    /*border: 1px solid #999999; /*es el borde gris */
+    width: 90%;
+    /*height: 50px;*/
+    height: auto;
+}
+
+.tiraMarcas {
+    /*border: 1px solid #999999; /*es el borde gris */
+    width: 90%;
+    height: auto;
+}
+
+.tiraVentaRefacciones {
+    /*border: 1px solid #999999; /*es el  borde gris */
+    width: 90%;
+    height: auto;
+}
+
+.tiraFinal {
+    /*border: 1px solid #999999; /*es el borde gris */
+    width: 90%;
+    height: 380px;
+}
+
+/*================================================================================================================*/
+
+
+/*color del ASIDE*/
+.list-group>.active:hover, .list-group>.active{
+    /*color: red;*/
+    background-color: #FFD21C;
+    border-color: #FFD21C;
+    height: 50px;
+
+    /*border-top: 1px solid #DCDCDC;
+    border-bottom: 1px solid #DCDCDC;
+    border-left: 1px solid #DCDCDC;
+    border-right: 1px solid #DCDCDC;*/
+}
+
+.list-group-item, .list-group>.datos, .list-group>.datos{
+    height: 50px;
+    /*background-color: #FFD21C;*/
+    color: #000000;
+    border-top: 1px solid #DCDCDC;
+    border-bottom: 1px solid #DCDCDC;
+    border-left: 1px solid #DCDCDC;
+    border-right: 1px solid #DCDCDC;
+
+}
+
+/*==================================================================*/
+/*BREADCRUMB*/
+.breadcrumb li>a{
+    /*color: #1E90FF;/* color de la miga de pan */
+    color: #0080ff; /*color de la miga de pan*/
+}
+
+
+/*=================================================TITULO=========================================================*/
+/*esto es por el fondo negro del body */
+/*h1, h2, h3, h4, p, #textoFormulario {
+color: #FFFFFF;
+
+}*/
+h1,p,h4{
+    color: white;
+}
+#linkk{
+    color: #f1f0f0;
+}
+
+.tituloServicio h3 {
+    font-size: 2.5em;
+    margin: 0;
+    display: block;
+}
+.tituloServicio h3 {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: .2em 0.5em;
+    display: inline-block;
+    font-family: FuenteCapuccino; /*fuente a Capuccino */
+    font-weight: 800;
+}
+.tituloServicio h3 span {
+    color: #FF9800; /*color naranja de Monte Carlo Automotriz */
+    font-weight: 400;
+    font-size: 1em !important;
+    text-transform: inherit;
+}
+.titulo{
+    /*background: url(../images/7.jpg) no-repeat 0px 0px; */
+    background: size:cover;
+    text-align:center;
+    padding:2em 0;
+}
+/*================================================================================================================*/
+#textoForm {
+    color: #FFFFFF;
+}
+
+#textoMayus {
+    text-transform: uppercase;
+
+}
+
+/*================================================================================*/
+.fancybox-custom .fancybox-skin {
+    box-shadow: 0 0 50px #222;
+}
+
+.galeria img {
+    width: 20%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+/*================================================================================*/
+.holder-error, .holder-ok {
+    /*background: rgba(230,77,77,.8);*/
+    background: rgba(255, 0, 0, 0.5);
+    bottom: 0;
+    font-weight: bold;
+    padding: 1em;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    color: #FFFFFF;
+    width: 100%;
+    z-index: 1000;
+}
+
+.holder-ok {
+    /*background: rgba(0, 255, 0, 0.5); 0, 122, 255, 0.5*/
+    background: rgba(0, 120, 255, 0.5);
+
+}
+
+.holder-success{
+    background: rgba(0, 255, 0, 0.5);
+}
+/*==================================================================================*/
+/*representa espacios entre cada article */
+.post {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #DCDCDC; /*color de las lineas */
+
+} 
+
+/* son el color de los titulos de cada imagen */
+.post .post-title a {
+    color: #DCDCDC;
+}
+
+/* es lpost previos:aside , contiene borde grande*/
+#post { 
+    margin: 60px 0px;
+    padding: 20px;
+    background: #D8D8D8; /* color del borde del aside */
+}
+
+/* ordena las letras que van cerca de la imagen, más a la derecha */
+.post .thumb { 
+    margin-right: 10px;
+    width: 40%;
+
+}
+
+/*==================================================================================*/
+/* Media Query*/
+@media screen and (max-width: 768px) {
+    .post .thumb {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 767px) {
+    .service-item, .blog-sec, .wrap-item, .loction-info{
+        margin-bottom: 15px;
+    }
+}
+
+ 
+ /*estilo de mensajes
+}
+}
+
+a {
+    color: #f58220;
+    font-weight: 400;
+}
+ 
+ 
+ 
+.error { 
+    margin: 20px auto 0;
+    border: 1px solid #777;
+    padding: 3px;
+    color: #fff;
+    text-align: center;
+    width: 650px;
+    background: #13110f;
+}
+ */
+ 

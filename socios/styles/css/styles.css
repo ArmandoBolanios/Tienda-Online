@@ -1,0 +1,382 @@
+/* estilos  */
+@font-face{
+    font-family: Sans;
+	src: url(OpenSans-Semibold.ttf);
+}
+
+
+/*
+#cabecera {
+  background: #FFDA00;
+	/*background-image: url(../images/chip.jpg);*/
+    /*border: 1px solid #999999; /* es el borde gris */
+   /* height: 100px; /*  ancho del menu de color amarillo
+}*/
+
+/* -- header */
+
+.nav li a:hover {
+	background-color:#DC182B; /*#DF0101 color cuando señala un elemento ul>li*/
+	color: white; /* la letra se tona en blanco para no perder color */
+}
+
+.nav > li {
+	float: left;
+}
+
+/*
+.nav li ul {
+	display: none;
+	position: absolute;
+	min-width: 140px;
+}
+.nav li:hover > ul {
+	display: block;
+}
+.nav li ul li {
+	position: relative;
+}
+.nav li ul li ul {
+	right: -140px;
+	top: 0px;
+}
+*/
+/*===========================================================================================================*/
+/*colores del menu bootstrap */
+.navbar-inverse { 
+	background-color: #FFD21C;/*es el fondo azul */
+	border-color: #FFD21C;/*es el borde azul del fondo*/
+	
+}
+
+ 
+.navbar-inverse .navbar-nav>li>a {
+	color:#080808;/*letras del menu en color negro */
+    font-size: 14px; /* tamaño de las letras del menu principal*/
+    /*text-transform: uppercase; /*esto hace todo en MAYÚSCULAS */
+    background: transparent;
+    -webkit-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out;
+	font-family: Sans; /*tipo de fuente para letras del menu*/
+	padding-right: 0px 15px 0px;	
+}
+
+/* color rojo cuando está en ACTIVE */
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+    color: red;  /*color de las letras cuando esta en active */
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+    color: red; /*color rojo al señalar el menu principal */
+	background-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle{
+	border-color: #FFFFFF;/*borde blanco del icono responsivo */
+}
+
+/* centra el menu */
+.navbar .navbar-nav {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+	text-align: center; /*centra el menu */
+}
+
+.navbar-fixed-top {
+	border-radius: 8px; /*pone borde del menu principal*/
+	
+}
+
+/*===========================================================================================================*/
+
+/* LOGO */
+.navbar-brand{
+	padding: 0px;
+}
+
+.navbar-brand>img{
+	height: 50px; /* 100 */
+	width: 50px;
+}
+
+/*=============================================================================================================*/
+
+.tiraPrincipal{
+  	/*background: #DCDCDC; /*color de relleno gris */
+	/*border: 1px solid #999999;/*es el bordegris */
+	border-radius: 8px;
+	width: 90%;
+}
+
+.tiraSlider{
+	/*border: 1px solid #999999;/*es el bordegris */
+	width: 90%;
+	height: 350px;
+}
+
+.tiraCentral {
+	/*border: 1px solid #999999; /*es el borde gris */
+	width: 90%;
+	/*height: 50px;*/
+	height: auto;
+}
+
+.tiraMarcas {
+	/*border: 1px solid #999999; /*es el borde gris */
+	width: 90%;
+	height: auto;
+}
+
+.tiraVentaRefacciones {
+	/*border: 1px solid #999999; /*es el  borde gris */
+	width: 90%;
+	height: auto;
+}
+
+.tiraFinal {
+	/*border: 1px solid #999999; /*es el borde gris */
+	width: 90%;
+	height: 380px;
+}
+/*==============================================================================================================*/
+
+.list-group>.active:hover, .list-group>.active{
+	/*color: red;*/
+	background-color: #FFD21C;
+	border-color: #FFD21C;
+	height: 50px;
+	
+	/*border-top: 1px solid #DCDCDC;
+	border-bottom: 1px solid #DCDCDC;
+	border-left: 1px solid #DCDCDC;
+	border-right: 1px solid #DCDCDC;*/
+}
+
+.list-group-item, .list-group>.datos, .list-group>.datos{
+	height: 50px;
+	/*background-color: #FFD21C;*/
+	color: #000000;
+	border-top: 1px solid #DCDCDC;
+	border-bottom: 1px solid #DCDCDC;
+	border-left: 1px solid #DCDCDC;
+	border-right: 1px solid #DCDCDC;
+	
+}
+
+/*==============================================================================================================*/
+
+/* CAROUSEL*/
+/*.carousel .item {
+	width: 100%;
+	max-height: 400px;
+}
+.carousel .item img {
+	width: 100%;
+}
+*/
+
+/*==============================================================================================================*/
+/*BREADCRUMB*/
+.breadcrumb li>a{
+	color: cornflowerblue;/* color de la miga de pan */
+}
+
+
+/*=================================================TITULO=========================================================*/
+/*esto es por el fondo negro del body */
+h1, h2, h3, h4 , p, li{
+	color: white;/* color de todos los titulos y texto */
+}
+
+.tituloServicio h3 {
+    font-size: 2.5em;
+    margin: 0;
+    display: block;
+}
+.tituloServicio h3 {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: .2em 0.5em;
+    display: inline-block;
+    font-family: FuenteCapuccino; /*fuente a Capuccino */
+    font-weight: 800;
+}
+.tituloServicio h3 span {
+    color: #FF9800; /*color naranja de Monte Carlo Automotriz */
+    font-weight: 400;
+    font-size: 1em !important;
+    text-transform: inherit;
+}
+.titulo{
+	/*background: url(../images/7.jpg) no-repeat 0px 0px; */
+    background: size:cover;
+	text-align:center;
+	padding:2em 0;
+}
+/*================================================================================================================*/
+#textoForm {
+	color: #FFFFFF;
+}
+
+/* post */
+/*representa espacios entre cada article */
+.post {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #DCDCDC; /*color de las lineas */
+	
+} 
+
+/* son el color de los titulos de cada imagen */
+.post .post-title a {
+    color: #DCDCDC;
+}
+
+/* es lpost previos:aside , contiene borde grande*/
+#post { 
+    margin: 60px 0px;
+    padding: 20px;
+	background: #D8D8D8; /* color del borde del aside */
+}
+
+/* ordena las letras que van cerca de la imagen, más a la derecha */
+.post .thumb { 
+    margin-right: 10px;
+    width: 40%;
+	
+}
+
+/*================================================================================================================*/
+/*BOTON DE BÚSQUEDA*/
+.subscribe-grid input[type="text"] {
+	display: inline-block;
+    background: #FFFFFF;
+    border: solid 1px #bbb;
+    width: 60%;
+	height: 37px;
+    outline: none;
+    padding: 1em;
+    font-size: .9em;
+    color: #999999;
+	border-radius: 5px;
+}
+
+
+.subscribe-grid button.btn1 {
+    color: #ffffff;
+    font-size: .9em;
+    border: solid 1px #F2F2F2; /*color del borce del botón*/
+    width: 55px; /*largo del botno */
+    height: 35px; /*ancho del boton */
+    text-align: center;
+    text-decoration: none;
+    background: #F2F2F2;/* color del botón*/ 
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+	border-radius: 5px;
+}
+
+button.btn1:hover{
+	border: solid 1px #FFFFFF;  /*al señalar color del borde en blanco*/
+	background: #FFFFFF;        /*al señalar color del boton en blanco*/
+	
+}
+.fa-search {
+	color: dodgerblue; /*color del icono search*/
+}
+
+/*================================================================================================================*/
+
+/* PROMOCIONES */
+#izquierda  {
+  width: 500px; 
+  float: left;
+} 
+
+#menuPromo {
+  width:60px;
+  height:312px;
+  padding:0;
+  margin:0;
+  list-style-type:none;
+}
+
+#menuPromo li a {
+  width:700px;
+  height:100px;
+  float:left;
+  overflow: hidden;
+}
+
+#menuPromo li a img {
+  border:0;
+}
+
+#menuPromo li a:hover {
+  height:420px;
+}
+
+/*insignia imagen */
+#insignia {
+	max-width: 55;
+}
+
+
+/*================================================================================================================*/
+
+/* Media Query*/
+@media screen and (max-width: 768px) {
+    .post .thumb {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 767px) {
+    .service-item, .blog-sec, .wrap-item, .loction-info{
+    margin-bottom: 15px;
+}
+}
+
+
+/**INTRO DE TODOS LOS SERVICIOS*/
+#intro{text-align:center;}
+
+#intro article{}
+#intro article .heading{display:block; position:relative; padding-bottom:15px;}
+#intro article .heading::after{display:block; position:absolute; bottom:0; left:50%; margin-left:-5%; width:10%; height:2px; content:"";}
+#intro article i{display:inline-block; width:100px; height:100px; line-height:100px; margin-bottom:30px; border-radius:50%; text-align:center; font-size:32px;}
+#intro article .btn{}
+
+
+#intro article .heading::after{background-color:#FFBF00;}
+#intro article i{color:#FFFFFF; background-color:rgba(0,0,0,.3);}
+#intro article:hover i{color:#FFFFFF; background-color:#FFBF00}
+
+#intro i{transition:all .4s ease-in-out;}
+
+@media screen and (min-width:180px) and (max-width:500px) {
+  #intro{padding:50px 0 20px;}
+}
+@media screen and (min-width:180px) and (max-width:900px) {
+ #intro{max-width:95%;}
+ @media screen and (min-width:978px) {
+ #intro{max-width:978px;}
+}
+
+.overlay{
+	background-color:rgba(0,0,0,.5);
+}
+
+	
+	
+	

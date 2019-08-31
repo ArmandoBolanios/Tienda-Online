@@ -1,0 +1,700 @@
+/* estilos  */
+.nav li a:hover {
+    background-color:#DC182B; /*#DF0101 color cuando señala un elemento ul>li*/
+    color: white; /* la letra se tona en blanco para no perder color */
+}
+
+/*.nav > li {
+float: left;
+}*/
+/*==================================================================================================*/
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.nav li:hover > ul {
+    display: block;
+}
+.nav li ul li {
+    position: relative;
+}
+.nav li ul li ul {
+    right: -140px;
+    top: 0px;
+}
+
+@font-face {
+    font-family: Quicksand-Medium;
+    src: url(Roboto-Regular.ttf);
+}
+
+/*===========================================================================================================*/
+/*colores del menu bootstrap */
+.navbar-inverse {
+    background-color: #FFD21C;/*es el fondo amarillo */
+    border-color: #FFD21C;/*es el borde amarillo del fondo*/
+    /*padding: 1px 0;*/
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #303030;/*letras del menu en color negro */
+    font-size: 12pt; /* tamaño de las letras del menu principal*/
+    /*text-transform: uppercase; /*esto hace todo en MAYÚSCULAS */
+    /*background: transparent;
+    -webkit-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out; */
+    /*font-family: Quicksand-Medium; /*tipo de fuente para letras del menu*/
+    /*padding-right: 0px 15px 0px;	*/
+    /*height: 100px;*/
+}
+
+/* color rojo cuando está en ACTIVE */
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+    color: red;  /*color de las letras cuando esta en active */
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+    color: red; /*color rojo al señalar el menu principal */
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle{
+    border-color: #FFFFFF;/*borde blanco del icono responsivo */
+}
+
+/* centra el menu */
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+    text-align: center; /*centra el menu */
+}
+
+/*.navbar-fixed-top {
+    border-radius: 8px; /*pone borde del menu principal*/
+
+/*}*/
+
+/* LOGO */
+
+.navbar-brand>img{
+    position: relative;
+	top: -15px;
+    width: 50px;
+    height: 50px;
+        
+}
+
+
+/*----------------------------------------------------------------*/
+@media screen and (max-width:991px) {
+	.navbar-default .navbar-brand {
+		font-size: 30px;
+	}
+	.nav>li>a {
+		padding: 10px 8px;
+	}
+	.navbar-nav>li>a {
+		line-height: 47px;
+	}
+}
+@media screen and (max-width:767px) {
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		border-color: #e7e7e7;
+		background: #222222;
+	}
+	.navbar-nav {
+		margin: 7.5px 0px;
+	}
+	.navbar-nav {
+		width: 100%;
+		padding-bottom: 4em;
+	}
+	.navbar-default .navbar-nav > li > a {
+		font-size: 15px;
+		text-align: center;
+	}
+	.navbar-nav>li>a {
+		line-height: 20px;
+	}
+	
+	.navbar-default .navbar-toggle .icon-bar {
+		background-color: #fff;
+	}
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+		border-color:#fff;
+	}
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+		background-color: rgba(75, 76, 76, 0);
+	}
+}
+@media screen and (max-width:736px) {
+	.navbar-toggle {
+		margin-top: 8px; /*hace que el cuadrito blanco del menu responsive se centre y se alinie al logo*/
+	}
+}
+@media screen and (max-width:320px) {
+	.navbar-default .navbar-brand {
+		font-size: 22px;
+	}
+}
+/*=============================================================================================================*/
+
+.tiraPrincipal{
+    /*background: #DCDCDC; /*color de relleno gris */
+    /*border: 1px solid #999999;/*es el bordegris */
+    border-radius: 8px;
+    width: 95%;
+    height: auto;
+}
+
+.tiraSlider{
+    /*border: 1px solid #999999;/*es el bordegris */
+    width: 95%;
+    height: auto;
+}
+
+.tiraCentral {
+    /*border: 1px solid #999999; /*es el borde gris */
+    width: 95%;
+    /*height: 50px;*/
+    height: auto;
+}
+
+
+.tiraMarcas {
+    /*border: 1px solid #999999; /*es el borde gris */
+    width: 95%;
+    height: auto;
+}
+
+.tiraVentaRefacciones {
+    /*border: 1px solid #999999; /*es el  borde gris */
+    width: 95%;
+    height: auto;
+}
+
+.tiraFinal {
+    /*border: 1px solid #999999; /*es el borde gris */
+    width: 95%;
+    height: 380px;
+}
+
+/*================================================================================================================*/
+
+/*color del ASIDE*/
+.list-group>.active:hover, .list-group>.active{
+    /*color: red;*/
+    background-color: #FFD21C;
+    border-color: #FFD21C;
+    height: 50px;
+
+    /*border-top: 1px solid #DCDCDC;
+    border-bottom: 1px solid #DCDCDC;
+    border-left: 1px solid #DCDCDC;
+    border-right: 1px solid #DCDCDC;*/
+}
+
+.list-group-item, .list-group>.datos, .list-group>.datos{
+    height: 50px;
+    /*background-color: #FFD21C;*/
+    color: #000000;
+    border-top: 1px solid #DCDCDC;
+    border-bottom: 1px solid #DCDCDC;
+    border-left: 1px solid #DCDCDC;
+    border-right: 1px solid #DCDCDC;
+
+}
+
+/*==================================================================*/
+/*BREADCRUMB*/
+.breadcrumb li>a{
+    /*color: #1E90FF;/* color de la miga de pan */
+    color: #0080ff; /*color de la miga de pan*/
+}
+
+.breadcrumb-arrow {
+    height: 36px;
+    padding: 0;
+    line-height: 36px;
+    list-style: none;
+    background-color: #e6e9ed
+}
+.breadcrumb-arrow li:first-child a {
+    border-radius: 4px 0 0 4px;
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px
+}
+.breadcrumb-arrow li, .breadcrumb-arrow li a, .breadcrumb-arrow li span {
+    display: inline-block;
+    vertical-align: top
+}
+.breadcrumb-arrow li:not(:first-child) {
+    margin-left: -5px
+}
+.breadcrumb-arrow li+li:before {
+    padding: 0;
+    content: ""
+}
+.breadcrumb-arrow li span {
+    padding: 0 10px
+}
+.breadcrumb-arrow li a, .breadcrumb-arrow li:not(:first-child) span {
+    height: 36px;
+    padding: 0 10px 0 25px;
+    line-height: 36px
+}
+.breadcrumb-arrow li:first-child a {
+    padding: 0 10px
+}
+.breadcrumb-arrow li a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    background-color: #3bafda;
+    border: 1px solid #3bafda
+}
+.breadcrumb-arrow li:first-child a {
+    padding-left: 10px
+}
+.breadcrumb-arrow li a:after, .breadcrumb-arrow li a:before {
+    position: absolute;
+    top: -1px;
+    width: 0;
+    height: 0;
+    content: '';
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent
+}
+.breadcrumb-arrow li a:before {
+    right: -10px;
+    z-index: 3;
+    border-left-color: #3bafda;
+    border-left-style: solid;
+    border-left-width: 11px
+}
+.breadcrumb-arrow li a:after {
+    right: -11px;
+    z-index: 2;
+    border-left: 11px solid #2494be
+}
+.breadcrumb-arrow li a:focus, .breadcrumb-arrow li a:hover {
+    background-color: #4fc1e9;
+    border: 1px solid #4fc1e9
+}
+.breadcrumb-arrow li a:focus:before, .breadcrumb-arrow li a:hover:before {
+    border-left-color: #4fc1e9
+}
+.breadcrumb-arrow li a:active {
+    background-color: #2494be;
+    border: 1px solid #2494be
+}
+.breadcrumb-arrow li a:active:after, .breadcrumb-arrow li a:active:before {
+    border-left-color: #2494be
+}
+.breadcrumb-arrow li span {
+    color: #434a54
+}
+
+/*=================================================TITULO=========================================================*/
+/*esto es por el fondo negro del body */
+/*h1, h2, h3, #textoFormulario {
+color: #e6e6e6;
+}*/
+/*================================================================================================================*/
+#textoForm {
+    color: #FFFFFF;
+}
+
+#textoMayus {
+    text-transform: uppercase;
+}
+
+#textoNegrita {
+    font-weight: bold;
+}
+
+/*=======galeria para FANCYBOX=====================================*/
+.fancybox-custom .fancybox-skin {
+    box-shadow: 0 0 50px #222;
+}
+
+/*galeria para fancybox*/
+.galeria img {
+    width: 20%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+/*================================================================================*/
+.holder-error, .holder-ok {
+    /*background: rgba(230,77,77,.8);*/
+    background: rgba(255, 0, 0, 0.5);
+    bottom: 0;
+    font-weight: bold;
+    padding: 1em;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    color: #FFFFFF;
+    width: 100%;
+    z-index: 1000;
+}
+
+.holder-ok {
+    /*background: rgba(0, 255, 0, 0.5); 0, 122, 255, 0.5*/
+    background: rgba(0, 120, 255, 0.5);
+
+}
+
+.holder-success{
+    background: rgba(0, 255, 0, 0.5);
+}
+/*==================================================================================*/
+.lineaDiv {
+    border-bottom: 1px solid #BDBDBD;
+}
+
+/*representa espacios entre cada article */
+.post {
+    padding-bottom: 20px; /*dejar espacio arriba- hacia abajo*/
+    /*margin-bottom:  20px; /*deja espacio arriba- hacia abajo entre las letras*/
+    border-bottom: 1px solid #DCDCDC; /*color de las lineas */
+
+} 
+
+
+/* son el color de los titulos de cada imagen */
+.post .post-title a {
+    color: #DCDCDC;
+}
+
+/* es post previos:aside , contiene borde grande*/
+#post { 
+    margin: 60px 0px;
+    padding: 20px;
+    background: #D8D8D8; /* color del borde del aside */
+}
+
+/* ordena las letras que van cerca de la imagen, más a la derecha */
+.post .thumb { 
+    margin-right: 10px;
+    width: 40%;
+
+}
+
+/*--------------------DIV DE COLOR GRIS-------------------------------------*/
+/*color gris del div*/
+.welcome,.about,.services,.blog,.news,.feedback,.wthree-subscribe,.contact{
+    padding:4em 0;
+}
+.about {
+    background: #eee; /*#eee; #f1f1f1; #f2f2f2; #f3f3f3; #f5f5f5; #F3F4F8; */
+}
+.w3-welcome-heading h2,.w3-welcome-heading h3{
+    color: #FF9800;
+    font-size: 3em;
+    margin: 0;
+    text-align: center;
+    /*text-transform: capitalize;*/
+}
+.w3ls-about-grids{
+    margin:4em 0 0 0;
+}
+.about-right {
+    float: right;
+}
+.about-right img {
+    width: 100%;
+    border: solid 5px #ffffff;
+}
+.about-left {
+    padding-right: 6em;
+}
+.about-left h4 {
+    color: #000;
+    /*font-family: 'Open Sans', sans-serif;*/
+    margin: 0 0 1em 0;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.about-left p {
+    font-size: 1em; /*tamaño de las letras de about us*/
+    margin: 0 0 2em 0;
+    color: #000;
+    line-height: 1.8em;
+}
+.about-left p span{
+    display:block;
+    margin:1em 0 0 0;
+}
+.about-left ul {
+    padding: 0;
+}
+.about-left ul li {
+    display: block;
+    font-size: .875em; /*tama o de los ul>li about us*/
+    color: #999999;
+    margin-top: 1em;
+}
+.about-left ul li  span.glyphicon {
+    padding-right: 6px;
+}
+/*===========================================EFECTOS PARA LA PLANTILLA "TODOS LOS SERVICIOS"=============================*/
+/*--------------------------------------------TIPO DE LETRA PARA TODO EL SITIO*/
+.tituloServicio h3 {
+    font-size: 2.5em;
+    margin: 0;
+    display: block;
+}
+.tituloServicio h3 {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: .2em 0.5em;
+    display: inline-block;
+    /*font-family: Roboto, sans-serif; /*fuente a Capuccino */
+    font-weight: 800;
+}
+.tituloServicio h3 span {
+    color: #FF9800; /*color naranja de Monte Carlo Automotriz */
+    font-weight: 400;
+    font-size: 1em !important;
+    text-transform: inherit;
+}
+.titulo{
+    /*background: url(../images/7.jpg) no-repeat 0px 0px; */
+    background: size:cover;
+    text-align:center;
+    padding:2em 0;
+}
+
+.overlay{
+    background-color:rgba(0,0,0,.5);
+}
+
+/* -------------------------------------------INTRO DE TODOS LOS SERVICIOS----------------------------------------------*/
+#intro{text-align:center;}
+#intro article{}
+#intro article .heading{display:block; position:relative; padding-bottom:15px;}
+#intro article .heading::after{display:block; position:absolute; bottom:0; left:50%; margin-left:-5%; width:10%; height:2px; content:"";}
+#intro article i{display:inline-block; width:100px; height:100px; line-height:100px; margin-bottom:30px; border-radius:50%; text-align:center; font-size:32px;}
+#intro article .btn{}
+
+
+#intro article .heading::after{background-color:#FFBF00;}
+#intro article i{color:#FFFFFF; background-color:rgba(0,0,0,.3);}
+#intro article:hover i{color:#FFFFFF; background-color:#FFBF00}
+
+#intro i{transition:all .4s ease-in-out;}
+
+
+/*==================================================================================*/
+
+/* PROMOCIONES */
+#izquierda  {
+    width: 500px; 
+    float: left;
+} 
+
+#menuPromo {
+    width:60px;
+    height:312px;
+    padding:0;
+    margin:0;
+    list-style-type:none;
+}
+
+#menuPromo li a {
+    width:700px;
+    height:100px;
+    float:left;
+    overflow: hidden;
+}
+
+#menuPromo li a img {
+    border:0;
+}
+
+#menuPromo li a:hover {
+    height:420px;
+}
+
+/*insignia imagen */
+#insignia {
+    max-width: 55;
+}
+
+/*==================================================================================*/
+/*estilos detalle del producto*/
+
+
+/*==================================================================================*/
+
+@media screen and (min-width:180px) and (max-width:500px) {
+    #intro{padding:50px 0 20px;}
+}
+@media screen and (min-width:180px) and (max-width:900px) {
+    #intro{max-width:95%;}
+    @media screen and (min-width:978px) {
+        #intro{max-width:978px;}
+    }
+}
+
+/*==================================================================================*/
+/* Media Query*/
+@media screen and (max-width: 768px) {
+    .post .thumb {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 767px) {
+    .service-item, .blog-sec, .wrap-item, .loction-info{
+        margin-bottom: 15px;
+    }
+}
+
+/*************************************agregado 15/ag/2017*************************************************/
+/* Boton detalle de producto*/
+
+.transparente-btn,
+.transparente-btn:active,
+.transparente-btn:focus,
+.transparente-btn:visited {
+
+    background: transparent;
+    border: 1px solid #337ab7;
+    border-radius: 4px;
+    height: 33px;
+    margin-left: 0px;
+    margin-bottom: 1px;
+    color: #337ab7;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    outline: 0px !important;
+}
+.transparente-btn:hover {
+    background-color: #337ab7;
+    color: #fff;
+    border-color:  #337ab7;
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
+.espacio{
+    padding: 2em; /*DEJA ESPACIO ARRIBA y el texto se pone más abajo*/
+}
+/*----------------------------------------------------------------------------------------------------------*/
+#toTop {
+	display: none;
+	text-decoration: none;
+	position: fixed;
+	bottom: 20px;
+	right: 2%;
+	overflow: hidden;
+	z-index: 999; 
+	width: 40px;
+	height: 40px;
+	border: none;
+	text-indent: 100%;
+	background: url(../img/index/arrow.png) no-repeat 0px 0px;
+}
+#toTopHover {
+	width: 40px;
+	height: 40px;
+	display: block;
+	overflow: hidden;
+	float: right;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+}
+/* para el resumen de la orden del carrito de compras */
+/* 
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+    .tamanio_resumen img {
+        width: 50px;
+        height: 50px;
+    }
+
+
+}
+/* 
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .tamanio_resumen img {
+        width: 50px;
+        height: 50px;
+    }
+}
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .tamanio_resumen img {
+        width: 50px;
+        height: 50px;
+    }
+}
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .tamanio_resumen img {
+        width: 50px;
+        height: 50px;
+    }
+}
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .tamanio_resumen img {
+        width: 50px;
+        height: 50px;
+    }
+}
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .tamanio_resumen p {
+        font-size: 10px;
+    }
+    .tamanio_resumen h4 {
+        font-size: 12px;
+    }
+    .tamanio_resumen h3 {
+        font-size: 15px;
+    }
+    .tamanio_resumen img {
+        width: 30px;
+        height: 30px;
+    }
+}
